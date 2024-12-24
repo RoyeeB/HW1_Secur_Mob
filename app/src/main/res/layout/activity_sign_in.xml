@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999DA0">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Your entry approval is conditional on 5 parameters."
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signin_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="Sign In"
+        android:textColor="@color/black"
+        android:backgroundTint="#898787"
+        />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@id/signin_BTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/place1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+
+            />
+
+        <TextView
+            android:id="@+id/place2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_toEndOf="@id/place1"
+            android:background="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/place3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_toEndOf="@id/place2"
+            android:background="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/place4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_toEndOf="@id/place3"
+            android:background="@color/red"/>
+
+        <TextView
+            android:id="@+id/place5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_toEndOf="@id/place4"
+            android:background="@color/red"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+</RelativeLayout>
